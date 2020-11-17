@@ -7,11 +7,13 @@ namespace Planner
     {
         static void Main(string[] args)
         {
+            // Create out city
             City travisville = new City();
             travisville.Name = "travisville";
             travisville.Mayor = "Travis Pinson";
             travisville.Established = 2001;
 
+            // Create buildings for our city
             Building FiveOneTwoEigth = new Building("512 8th Avenue");
             FiveOneTwoEigth.Construct();
             FiveOneTwoEigth.Purchase("Dan Quayle");
@@ -44,13 +46,11 @@ namespace Planner
             OneEightTwoMaple.AddDepth(9);
             travisville.cityBuildings.Add(OneEightTwoMaple);
 
-
-
-
-            Console.WriteLine(travisville.cityBuildings.Count);
-
-
-
+            // Write out details of each building in city buildings
+            foreach (Building building in travisville.cityBuildings)
+            {
+                buildingWriter(building);
+            }
 
         }
 
@@ -62,6 +62,8 @@ namespace Planner
             Console.WriteLine($"Constructed on {building.DateConstructed}");
             Console.WriteLine($"Owned by {building.Owner}");
             Console.WriteLine($"{building.Volume} cubic meters of space");
+            Console.WriteLine("");
+            Console.WriteLine("");
         }
     }
 }
