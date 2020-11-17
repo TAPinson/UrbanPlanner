@@ -5,7 +5,7 @@ namespace Planner
 {
     public class Building
     {
-        private string _deisgner = "Travis Pinson";
+        private string _designer = "Travis Pinson";
         private DateTime _dateConstructed { get; set; }
         private string _address { get; set; }
         private string _owner { get; set; }
@@ -34,7 +34,7 @@ namespace Planner
         {
             get
             {
-                return _deisgner;
+                return _designer;
             }
         }
 
