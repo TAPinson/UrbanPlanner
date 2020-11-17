@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Planner
 {
@@ -6,13 +7,18 @@ namespace Planner
     {
         static void Main(string[] args)
         {
+            City travisville = new City();
+            travisville.Name = "travisville";
+            travisville.Mayor = "Travis Pinson";
+            travisville.Established = 2001;
+
             Building FiveOneTwoEigth = new Building("512 8th Avenue");
             FiveOneTwoEigth.Construct();
             FiveOneTwoEigth.Purchase("Dan Quayle");
             FiveOneTwoEigth.AddStories(3);
             FiveOneTwoEigth.AddWidth(50);
             FiveOneTwoEigth.AddDepth(10);
-            buildingWriter(FiveOneTwoEigth);
+            travisville.cityBuildings.Add(FiveOneTwoEigth);
 
             Building OneOneZeroOne = new Building("110 1st Avenue");
             OneOneZeroOne.Construct();
@@ -20,7 +26,7 @@ namespace Planner
             OneOneZeroOne.AddStories(33);
             OneOneZeroOne.AddWidth(150);
             OneOneZeroOne.AddDepth(10);
-            buildingWriter(OneOneZeroOne);
+            travisville.cityBuildings.Add(OneOneZeroOne);
 
             Building TwoEightFiveSeventh = new Building("285 7th Avenue");
             TwoEightFiveSeventh.Construct();
@@ -28,7 +34,7 @@ namespace Planner
             TwoEightFiveSeventh.AddStories(1);
             TwoEightFiveSeventh.AddWidth(15);
             TwoEightFiveSeventh.AddDepth(10);
-            buildingWriter(TwoEightFiveSeventh);
+            travisville.cityBuildings.Add(TwoEightFiveSeventh);
 
             Building OneEightTwoMaple = new Building("182 Maple Ct");
             OneEightTwoMaple.Construct();
@@ -36,8 +42,12 @@ namespace Planner
             OneEightTwoMaple.AddStories(2);
             OneEightTwoMaple.AddWidth(52);
             OneEightTwoMaple.AddDepth(9);
-            buildingWriter(OneEightTwoMaple);
+            travisville.cityBuildings.Add(OneEightTwoMaple);
 
+
+
+
+            Console.WriteLine(travisville.cityBuildings.Count);
 
 
 
@@ -52,7 +62,6 @@ namespace Planner
             Console.WriteLine($"Constructed on {building.DateConstructed}");
             Console.WriteLine($"Owned by {building.Owner}");
             Console.WriteLine($"{building.Volume} cubic meters of space");
-
         }
     }
 }
