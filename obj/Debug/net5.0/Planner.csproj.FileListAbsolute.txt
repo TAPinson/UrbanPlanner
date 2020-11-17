@@ -1,0 +1,16 @@
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\Planner.exe
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\Planner.deps.json
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\Planner.runtimeconfig.json
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\Planner.runtimeconfig.dev.json
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\Planner.dll
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\ref\Planner.dll
+C:\Users\Travis\workspace\csharp\exercises\planner\bin\Debug\net5.0\Planner.pdb
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.csprojAssemblyReference.cache
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.AssemblyInfoInputs.cache
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.AssemblyInfo.cs
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.csproj.CoreCompileInputs.cache
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.dll
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\ref\Planner.dll
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.pdb
+C:\Users\Travis\workspace\csharp\exercises\planner\obj\Debug\net5.0\Planner.genruntimeconfig.cache
