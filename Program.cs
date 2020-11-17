@@ -20,7 +20,7 @@ namespace Planner
             FiveOneTwoEigth.AddStories(3);
             FiveOneTwoEigth.AddWidth(50);
             FiveOneTwoEigth.AddDepth(10);
-            travisville.cityBuildings.Add(FiveOneTwoEigth);
+            travisville.AddBuilding(FiveOneTwoEigth);
 
             Building OneOneZeroOne = new Building("110 1st Avenue");
             OneOneZeroOne.Construct();
@@ -28,7 +28,7 @@ namespace Planner
             OneOneZeroOne.AddStories(33);
             OneOneZeroOne.AddWidth(150);
             OneOneZeroOne.AddDepth(10);
-            travisville.cityBuildings.Add(OneOneZeroOne);
+            travisville.AddBuilding(OneOneZeroOne);
 
             Building TwoEightFiveSeventh = new Building("285 7th Avenue");
             TwoEightFiveSeventh.Construct();
@@ -36,7 +36,7 @@ namespace Planner
             TwoEightFiveSeventh.AddStories(1);
             TwoEightFiveSeventh.AddWidth(15);
             TwoEightFiveSeventh.AddDepth(10);
-            travisville.cityBuildings.Add(TwoEightFiveSeventh);
+            travisville.AddBuilding(TwoEightFiveSeventh);
 
             Building OneEightTwoMaple = new Building("182 Maple Ct");
             OneEightTwoMaple.Construct();
@@ -44,14 +44,13 @@ namespace Planner
             OneEightTwoMaple.AddStories(2);
             OneEightTwoMaple.AddWidth(52);
             OneEightTwoMaple.AddDepth(9);
-            travisville.cityBuildings.Add(OneEightTwoMaple);
+            travisville.AddBuilding(OneEightTwoMaple);
 
             // Write out details of each building in city buildings
             foreach (Building building in travisville.cityBuildings)
             {
                 buildingWriter(building);
             }
-
         }
 
         static void buildingWriter(Building building)
