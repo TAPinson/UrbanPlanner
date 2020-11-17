@@ -22,6 +22,38 @@ namespace Planner
             }
         }
 
+        public string Owner
+        {
+            get
+            {
+                return _owner;
+            }
+        }
+
+        public string Designer
+        {
+            get
+            {
+                return _deisgner;
+            }
+        }
+
+        public string Address
+        {
+            get
+            {
+                return _address;
+            }
+        }
+
+        public DateTime DateConstructed
+        {
+            get
+            {
+                return _dateConstructed;
+            }
+        }
+
         public Building(string address)
         {
             _address = address;
@@ -36,6 +68,22 @@ namespace Planner
         {
             _owner = purchaser;
         }
+
+        public void AddStories(int stories)
+        {
+            Stories = stories;
+        }
+
+        public void AddWidth(int width)
+        {
+            Width = width;
+        }
+
+        public void AddDepth(int depth)
+        {
+            Depth = depth;
+        }
+
     }
 
 }
